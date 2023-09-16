@@ -1,41 +1,34 @@
-# Astro
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This directory is a brief example of an [Astro](https://astro.build/) site that can be deployed to Vercel with zero configuration. This demo showcases:
+## Getting Started
 
-- `/` - A static page (pre-rendered)
-- `/ssr` - A page that uses server-side rendering (through [Vercel Edge Functions](https://vercel.com/docs/functions/edge-functions))
-- `/ssr-with-swr-caching` - Similar to the previous page, but also caches the response on the [Vercel Edge Network](https://vercel.com/docs/edge-network/overview) using `cache-control` headers
-- `/image` - Astro [Asset](https://docs.astro.build/en/guides/assets/) using Vercel [Image Optimization](https://vercel.com/docs/image-optimization)
-- `/edge.json` - An Astro API Endpoint that returns JSON data using [Vercel Edge Functions](https://vercel.com/docs/functions/edge-functions)
+First, run the development server:
 
-Learn more about [Astro on Vercel](https://vercel.com/docs/frameworks/astro).
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-## Deploy Your Own
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Deploy your own Astro project with Vercel.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/astro&template=astro)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-_Live Example: https://astro-template.vercel.app_
+## Learn More
 
-## Project Structure
+To learn more about Next.js, take a look at the following resources:
 
-Astro looks for `.astro`, `.md`, or `.js` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Deploy on Vercel
 
-## Commands
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `pnpm install`          | Installs dependencies                              |
-| `pnpm run dev`          | Starts local dev server at `localhost:3000`        |
-| `pnpm run build`        | Build your production site to `./dist/`            |
-| `pnpm run preview`      | Preview your build locally, before deploying       |
-| `pnpm run start`       | Starts a production dev server at  `localhost:3000`     |
-| `pnpm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `pnpm run astro --help` | Get help using the Astro CLI                       |
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
